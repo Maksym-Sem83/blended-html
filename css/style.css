@@ -62,8 +62,52 @@ img {
     margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+    
 @media screen and (min-width: 1150px) {
     .container {
         max-width: 1150px;
     }
+}
+
+
+/* header */
+
+.page-header {
+   
+    box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}
+
+
+.logo {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 93%;
+    color: #173a56;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 12px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list, 
+.header-btn {
+    display: none;
 }
